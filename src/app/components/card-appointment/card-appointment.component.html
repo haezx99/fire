@@ -1,0 +1,29 @@
+<ion-card class="bk-white">
+    <div (click)="isOpen = !isOpen">
+      <ion-card-header>
+        <ion-item lines="none">
+          <ion-avatar slot="start">
+            <img [src]="avatar" alt="" />
+          </ion-avatar>
+          <ion-label>
+            <h2 class="card-title">{{ name }}</h2>
+            <p class="card-subtitle">{{ date }}</p>
+          </ion-label>
+  
+          <ul class="you-pay">
+            <li>You pay</li>
+            <li>{{ amount | currency }}</li>
+          </ul>
+        </ion-item>
+      </ion-card-header>
+  
+      <ion-card-content>
+        {{ text }}
+      </ion-card-content>
+    </div>
+    <ion-buttons class="cta-buttons" *ngIf="isOpen">
+      <ion-button class="btn-green" expand="block">Book Again</ion-button>
+      <ion-button class="btn-green-outline" expand="block">Review Job</ion-button>
+    </ion-buttons>
+  </ion-card>
+  

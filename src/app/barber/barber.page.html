@@ -1,0 +1,71 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="dark" [appHideheader]="scrollArea">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-title>Barber</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content #scrollArea scrollEvents="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h5>Service avaible in the barber category</h5>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-avatar [routerLink]="'/barber1/'">
+              <img src="assets/Nimroc.png">
+            </ion-avatar>
+
+            <ion-card-content>
+              <b>NIMROC BARBER</b>
+              <br>
+              <p>It's established in 2009</p>
+
+            </ion-card-content>
+          </ion-item>
+
+        </ion-list>
+
+        <ion-list>
+          <ion-item>
+            <ion-avatar [routerLink]="'/barber2/'">
+              <img src="assets/barber2.png">
+            </ion-avatar>
+
+            <ion-card-content>
+              <b>JOE'S BARBER</b>
+              <br>
+              It's established in 2012
+
+            </ion-card-content>
+          </ion-item>
+
+        </ion-list>
+
+        <ion-list>
+          <ion-item>
+            <ion-avatar [routerLink]="'/barber3/'">
+              <img src="assets/barber3.jpg">
+            </ion-avatar>
+
+            <ion-card-content>
+              <b>ZENON BARBER</b>
+              <br>
+              It's established in 2010
+
+            </ion-card-content>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

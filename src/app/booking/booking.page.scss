@@ -1,0 +1,25 @@
+.custom-font {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+ion-label {
+    font-size: 16pt !important;
+    font-weight: 500;
+    color: #223E5C;
+
+    & span {
+        font-size: 10pt;
+        color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+ion-button{
+    --background: linear-gradient( 135deg, #52e79d 10%, #130CB7 100%);
+    margin-top: 20px;
+  }
+
+  .l{
+    
+    font-family: Josefin Sans;
+    
+  }

@@ -1,0 +1,82 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="dark" [appHideheader]="scrollArea">
+    <ion-buttons slot="start">
+
+      <ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-title>Moving</ion-title>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content #scrollArea scrollEvents="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h5>Service avaible in the moving category</h5>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+        <ion-list>
+          <ion-item>
+            <ion-avatar [routerLink]="'/moving1/'">
+              <img src="assets/EazyMover.jfif">
+            </ion-avatar>
+
+            <ion-card-content>
+              <b>EAZY MOVER</b>
+              <br>
+              It's established in 2009
+
+            </ion-card-content>
+          </ion-item>
+
+        </ion-list>
+
+
+        <ion-list>
+          <ion-item>
+            <ion-avatar [routerLink]="'/moving2/'">
+              <img src="assets/moving2.png">
+            </ion-avatar>
+
+            <ion-card-content>
+              <b>ALLIED PICKFORDS</b>
+              <br>
+              It's established in 2012
+
+            </ion-card-content>
+          </ion-item>
+
+        </ion-list>
+
+        <ion-list>
+          <ion-item>
+            <ion-avatar [routerLink]="'/moving3/'">
+              <img src="assets/moving3.jpg">
+            </ion-avatar>
+
+            <ion-card-content>
+              <b>AKMOVERS</b>
+              <br>
+              It's established in 2014
+
+            </ion-card-content>
+          </ion-item>
+
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

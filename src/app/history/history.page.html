@@ -1,0 +1,44 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="l">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="settings"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Orders</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+    <ion-row>
+      <ion-col>
+        <div >
+          <ion-grid>
+          <p>Status Order</p>
+
+          <ion-list class="l">
+            <ion-item class="l" lines="none" *ngFor="let p of book">
+              <ion-card>
+                <ion-card-content >
+                  <b>{{p.company}}</b>
+                  <br>
+                  {{p.service}}
+                  <div class="rate">
+                    <p>{{p.address}}</p>
+                    <span>{{p.status}}</span>
+                  </div>
+                    <div class="date">
+                    <span>{{p.date}}</span>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-item>
+          </ion-list>
+        </ion-grid>
+        </div>
+      </ion-col>
+    </ion-row>
+  
+
+</ion-content>

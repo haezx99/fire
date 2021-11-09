@@ -1,0 +1,76 @@
+<ion-header class="ion-no-border">
+	<ion-toolbar color="dark" [appHideheader]="scrollArea">
+		<ion-buttons slot="start">
+			<ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-title>Electrical</ion-title>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+  <ion-content  #scrollArea scrollEvents="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h5>Service avaible in the electrical category</h5>
+        </ion-col>
+      </ion-row>
+     
+      </ion-grid>
+
+      <ion-grid>
+
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/electrical1/'">
+                <img src="assets/TNB.jpg">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>TENAGA NASIONAL BERHAD</b>
+               <br>
+               It's established in 1900
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/electrical2/'">
+                <img src="assets/electrical2.jpg">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>RENOVATION SPECIALIST</b>
+               <br>
+               It's established in 2003
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/electrical3/'">
+                <img src="assets/electrical3.png">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>DEC CONTRACT</b>
+               <br>
+               It's established in 2008
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

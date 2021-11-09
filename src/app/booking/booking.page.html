@@ -1,0 +1,57 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+<ion-header>
+
+</ion-header>
+<ion-buttons slot="start">
+  <ion-back-button defaultHref="/"></ion-back-button>
+</ion-buttons>
+<ion-content>
+  
+  
+    <ion-grid class="column-evenly">
+      <ion-row >
+        <ion-col class="mx-1">
+          <ion-item class="ion-no-padding">
+            <ion-label class="l" position="stacked"><b>Company</b></ion-label>
+            <ion-input  type="input" [(ngModel)]="post.company" required>{{company}}</ion-input>
+          </ion-item>
+
+          <ion-item class="ion-no-padding">
+            <ion-label class="l" position="stacked"><b>Service</b></ion-label>
+            <ion-input class="input" type="text" [(ngModel)]="post.service" required></ion-input>
+          </ion-item>
+
+          <ion-item class="ion-no-padding">
+            <ion-label class="l" position="stacked"><b>Address</b></ion-label>
+            <ion-input class="input" type="text" [(ngModel)]="post.address" required></ion-input>
+          </ion-item>
+
+          <ion-item class="ion-no-padding">
+            <ion-label class="l" position="stacked"><b>Time</b></ion-label>
+            <ion-datetime class="input" type="time" [(ngModel)]="post.time" display-format="h:mm A" picker-format="h:mm A" ></ion-datetime>
+          </ion-item>
+          
+          <ion-item class="ion-no-padding">
+            <ion-label class="l" position="stacked"><b>Date</b></ion-label>
+            <ion-datetime class="input" type="date" [(ngModel)]="post.date" displayFormat="D MMM YYYY" min="1969" max="2021" ></ion-datetime>
+          </ion-item>
+
+          <div class="agree-terms">
+            <ion-checkbox slot="start" checked="true"> </ion-checkbox>
+  
+            <span>I want to pay once the repair is finished</span>
+          </div>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col style="margin-top: 1rem;">
+          <ion-button  (click)="createPost(post)" class="button-size center-button" expand="block">
+            Complete appointment
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-content>
+  

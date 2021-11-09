@@ -1,0 +1,233 @@
+<ion-header class="ion-no-border">
+	<ion-toolbar [appHideheader]="scrollArea">
+		<ion-buttons slot="start">
+			<ion-back-button defaultHref="/barber"></ion-back-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+<ion-content #scrollArea scrollEvents="true">
+	<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+		<ion-fab-button [routerLink]="['/booking', company]">
+			<ion-icon name="calendar"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
+	<ion-grid>
+		<ion-row>
+			<ion-col class="ion-profile ion-text-center">
+				<ion-avatar>
+					<img src="assets/barber3.jpg" />
+				</ion-avatar>
+				<h5>
+					ZENON BARBER
+					<ion-icon
+						
+						class="icon-verified"
+						name="checkmark-circle"
+					></ion-icon>
+				</h5>
+				<small 
+					>Verified professional</small
+				>
+				<p>
+					From trim to shave, traditional to modern, #rockenrow to jazz, vintage bikes and the vibes.
+				</p>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-segment [(ngModel)]="valueType">
+				<ion-segment-button value="info">
+					Info
+				</ion-segment-button>
+
+        <ion-segment-button value="gallery">
+					Gallery
+				</ion-segment-button>
+				
+				<ion-segment-button value="reviews">
+					Reviews
+				</ion-segment-button>
+			</ion-segment>
+		</ion-row>
+		<div [ngSwitch]="valueType">
+			<ion-grid *ngSwitchCase="'info'">
+				<ion-row>
+					<ion-col>
+						<div class="l">
+							<p>Services</p>
+							<ion-list>
+								<ion-item lines="none">
+									<ion-label>Haircut</ion-label>
+									<div class="rate">
+										<p>RM30</p>
+										<span>per person</span>
+									</div>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Haircut+Wash</ion-label>
+									<div class="rate">
+										<p>RM35</p>
+										<span>per person</span>
+									</div>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Haircut+Wash+Shave</ion-label>
+									<div class="rate">
+										<p>RM45</p>
+										<span>per person</span>
+									</div>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Beard Trim</ion-label>
+									<div class="rate">
+										<p>RM15</p>
+										<span>per person</span>
+									</div>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Young(Under 12 Years Old)</ion-label>
+									<div class="rate">
+										<p>RM15</p>
+										<span>per person</span>
+									</div>
+								</ion-item>
+							</ion-list>
+						</div>
+
+						<div class="info-list">
+							<p>Services Hours</p>
+							<ion-list>
+								<ion-item lines="none">
+									<ion-label>Mondays</ion-label>
+									<small slot="end">10:00AM to 10:00PM</small>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Tuesdays</ion-label>
+									<small slot="end">10:00AM to 10:00PM</small>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Wednesdays</ion-label>
+									<small slot="end">10:00AM to 10:00PM</small>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Thursdays</ion-label>
+									<small slot="end">10:00AM to 10:00PM</small>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Fridays</ion-label>
+									<small slot="end">Closed</small>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Saturdays</ion-label>
+									<small slot="end">12:00PM to 10.00PM</small>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>Sundays</ion-label>
+									<small slot="end">10:00PM to 10.00PM</small>
+								</ion-item>
+							</ion-list>
+						</div>
+						<div class="info-list">
+							<p>Contact Info</p>
+							<ion-list>
+								<ion-item lines="none">
+									<ion-label>barbershop@zenon.my</ion-label>
+								</ion-item>
+								<ion-item lines="none">
+									<ion-label>010-235 5000</ion-label>
+								</ion-item>
+							</ion-list>
+						</div>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+
+      <ion-grid *ngSwitchCase="'gallery'">
+				<ion-slides [options]="option" class="ion-margin-top">
+
+          <ion-slide >
+            <ion-card class="slide1">
+            <img src="assets/barber/b9.jfif"  class="img1"/>
+            
+          
+            </ion-card>
+          </ion-slide>
+        
+          <ion-slide>
+            <ion-card class="slide2">
+            <img src="assets/barber/b10.jfif"  class="img2"/>
+            
+            
+            </ion-card>
+          </ion-slide>
+        
+          <ion-slide>
+            <ion-card class="slide3">
+            <img src="assets/barber/b11.jfif"  class="img3"/>
+            
+            
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="slide3">
+            <img src="assets/barber/b12.jfif"  class="img3"/>
+            
+            
+            </ion-card>
+          </ion-slide>
+    
+         
+        
+
+          </ion-slides>
+        </ion-grid>
+			
+			<ion-grid *ngSwitchCase="'reviews'">
+				<ion-row>
+					<ion-col>
+						<!-- review list-->
+						<div class="review-container">
+							<p>730 <small>reviews</small></p>
+							<ion-item lines="none">
+								<ion-progress-bar
+									color="primary"
+									value="8"
+								></ion-progress-bar>
+								<span slot="end"> 5 stars</span>
+							</ion-item>
+							<ion-item lines="none">
+								<ion-progress-bar
+									color="primary"
+									value=".9"
+								></ion-progress-bar>
+								<span slot="end"> 4 stars</span>
+							</ion-item>
+							<ion-item lines="none">
+								<ion-progress-bar
+									color="primary"
+									value=".3"
+								></ion-progress-bar>
+								<span slot="end"> 3 stars</span>
+							</ion-item>
+							<ion-item lines="none">
+								<ion-progress-bar
+									color="primary"
+									value=".0"
+								></ion-progress-bar>
+								<span slot="end"> 2 stars</span>
+							</ion-item>
+							<ion-item lines="none">
+								<ion-progress-bar
+									color="primary"
+									value=".1"
+								></ion-progress-bar>
+								<span slot="end"> 1 stars</span>
+							</ion-item>
+						</div>
+						
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</div>
+	</ion-grid>
+</ion-content>

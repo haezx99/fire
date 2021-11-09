@@ -1,0 +1,205 @@
+<ion-header class="ion-no-border">
+
+	<ion-toolbar class="l" [appHideheader]="scrollArea">
+		<ion-grid>
+
+			<ion-row>
+
+				<ion-col class="flex-container">
+
+					<span>
+						<ion-text color="light">
+							<b>Hello Mr/Mrs:</b>
+							<br>
+							<ion-text class="p">
+							<b>{{user.name}}</b>
+						</ion-text>
+						</ion-text>
+					</span>
+
+					<ion-avatar [routerLink]="['/settings']" class="ion-no-margin">
+						<img src="/assets/icons/people.png">
+					</ion-avatar>
+
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+	</ion-toolbar>
+
+</ion-header>
+
+<ion-content #scrollArea scrollEvents="true">
+
+	<ion-row>
+		<ion-col>
+			<h5>Slide to right or left to see more option</h5>
+		</ion-col>
+	</ion-row>
+
+	<ion-slides [options]="option" class="ion-margin-top">
+
+
+		<ion-slide>
+			<ion-card class="slide1">
+				<img src="assets/Moving.png" class="img1" />
+
+				<ion-button routerLink="/moving">MOVING</ion-button>
+			</ion-card>
+		</ion-slide>
+
+		<ion-slide>
+			<ion-card class="slide2">
+				<img src="assets/Barber.png" class="img2" />
+
+				<ion-button routerLink="/barber">BARBER</ion-button>
+			</ion-card>
+		</ion-slide>
+
+		<ion-slide>
+			<ion-card class="slide3">
+				<img src="assets/Petcare.png" class="img3" />
+
+				<ion-button routerLink="/petcare">PET CARE</ion-button>
+			</ion-card>
+		</ion-slide>
+
+		<ion-slide>
+			<ion-card class="slide4">
+				<img src="assets/Designing.jpg" class="img4" />
+
+				<ion-button routerLink="/designing">DESIGNING</ion-button>
+			</ion-card>
+		</ion-slide>
+
+		<ion-slide>
+			<ion-card class="slide5">
+				<img src="assets/Electrical.jpg" class="img5" />
+
+				<ion-button routerLink="/electrical">ELECTRICAL</ion-button>
+			</ion-card>
+		</ion-slide>
+
+		<ion-slide>
+			<ion-card class="slide6">
+				<img src="assets/Security.jpg" class="img6" />
+
+				<ion-button routerLink="/security">SECURITY</ion-button>
+			</ion-card>
+		</ion-slide>
+
+	</ion-slides>
+
+	<ion-row>
+		<ion-col size="4" *ngFor="let item of cardInf">
+		</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col class="profile-title">
+			<h5>Popular Company</h5>
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col>
+
+			<ion-list>
+				<ion-item>
+					<ion-avatar [routerLink]="'/moving1/'">
+						<img src="assets/EazyMover.jfif">
+					</ion-avatar>
+
+					<ion-card-content>
+						<b>EAZY MOVER</b>
+						<br>
+						It's established in 2009
+
+					</ion-card-content>
+				</ion-item>
+
+			</ion-list>
+
+			<ion-list>
+				<ion-item>
+					<ion-avatar [routerLink]="'/electrical1/'">
+						<img src="assets/TNB.jpg">
+					</ion-avatar>
+
+					<ion-card-content>
+						<b>TENAGA NASIONAL BERHAD</b>
+						<br>
+						It's established in 1900
+
+					</ion-card-content>
+				</ion-item>
+
+			</ion-list>
+
+			<ion-list>
+				<ion-item>
+					<ion-avatar [routerLink]="'/designing1/'">
+						<img src="assets/PINS.jfif">
+					</ion-avatar>
+
+					<ion-card-content>
+						<b>PINS STUDIO</b>
+						<br>
+						It's established in 2010
+
+					</ion-card-content>
+				</ion-item>
+
+			</ion-list>
+
+			<ion-list>
+				<ion-item>
+					<ion-avatar [routerLink]="'/barber1/'">
+						<img src="assets/Nimroc.png">
+					</ion-avatar>
+
+					<ion-card-content>
+						<b>NIMROC BARBER</b>
+						<br>
+						It's established in 2009
+
+					</ion-card-content>
+				</ion-item>
+
+			</ion-list>
+
+			<ion-list>
+				<ion-item>
+					<ion-avatar [routerLink]="'/petcare1/'">
+						<img src="assets/PetCare.jpg">
+					</ion-avatar>
+
+					<ion-card-content>
+						<b>PETCARE ENTERPRISE</b>
+						<br>
+						It's established in 1990
+
+					</ion-card-content>
+				</ion-item>
+
+			</ion-list>
+
+			<ion-list>
+				<ion-item>
+					<ion-avatar [routerLink]="'/security1/'">
+						<img src="assets/TGS.png">
+					</ion-avatar>
+
+					<ion-card-content>
+						<b>TEAMS GUARDS SECURITY</b>
+						<br>
+						It's established in 1997
+
+					</ion-card-content>
+				</ion-item>
+
+			</ion-list>
+
+		</ion-col>
+	</ion-row>
+
+
+</ion-content>

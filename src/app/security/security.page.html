@@ -1,0 +1,75 @@
+<ion-header class="ion-no-border">
+	<ion-toolbar color="dark" [appHideheader]="scrollArea">
+		<ion-buttons slot="start">
+			<ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-title>Security</ion-title>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+  <ion-content  #scrollArea scrollEvents="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h5>Service avaible in the security category</h5>
+        </ion-col>
+      </ion-row>
+      
+      
+
+      
+
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/security1/'">
+                <img src="assets/TGS.png">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>TEAMS GUARDS SECURITY</b>
+               <br>
+               It's established in 1997
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/security2/'">
+                <img src="assets/security2.png">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>SECOM SECURITY INFORMATION</b>
+               <br>
+               It's established in 1966
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/security3/'">
+                <img src="assets/security3.jfif">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>EAGLE EYE SECURITY</b>
+               <br>
+               It's established in 2002
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

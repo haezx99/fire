@@ -1,0 +1,62 @@
+.icon-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    ion-icon {
+      font-size: 24pt;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #223e5c;
+      font-weight: 600;
+      margin: 0 0 0.5em 0;
+    }
+  }
+  
+  .round-back {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .red {
+    background: #f7685b;
+  }
+  
+  .green {
+    background: #21a472;
+  }
+  
+  .blue {
+    background: #5784be;
+  }
+  
+  .yellow {
+    background: #e38e3f;
+  }
+  
+  .light-green {
+    background: #6ed5b0;
+  }
+  
+  .black {
+    background: #223e5c;
+  }
+  
+  ion-avatar {
+    width: 40pt;
+    height: 40pt;
+    margin-right: 0.8em;
+  }
+  
+  
+  ion-card-title {
+    font-size: 16px;
+    color: #223e5c;
+  }

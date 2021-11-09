@@ -1,0 +1,21 @@
+.card-title {
+	font-size: 12pt;
+	color: #223e5c;
+}
+
+ion-card-content {
+	font-size: 11pt;
+	font-weight: 400;
+	color: rgba(34, 62, 92, 0.8);
+}
+
+ion-item {
+	--padding-start: 0;
+	--inner-padding-end: 0;
+	--background: #fff;
+  }
+  
+  ion-avatar {
+	width: 48px;
+	height: 48px;
+  }

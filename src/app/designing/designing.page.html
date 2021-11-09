@@ -1,0 +1,75 @@
+<ion-header class="ion-no-border">
+	<ion-toolbar color="dark" [appHideheader]="scrollArea">
+		<ion-buttons slot="start">
+			<ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-title>Designing</ion-title>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+  <ion-content  #scrollArea scrollEvents="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h5>Service avaible in the designing category</h5>
+        </ion-col>
+      </ion-row>
+      
+      </ion-grid>
+
+      
+<ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/designing1/'">
+                <img src="assets/PINS.jfif">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>PINS STUDIO</b>
+               <br>
+               It's established in 2010
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/designing2/'">
+                <img src="assets/designing2.png">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>IQI CONCEPT</b>
+               <br>
+               It's established in 2014
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/designing3/'">
+                <img src="assets/designing3.png">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>THE GRID STUDIO</b>
+               <br>
+               It's established in 2015
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

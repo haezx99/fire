@@ -1,0 +1,33 @@
+ion-content {
+    --ion-background-color: #ffffff;
+  }
+  
+ion-grid {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    background-image: url("../../../assets/back.png");
+    background-repeat: repeat;
+}
+
+ion-img {
+	width: 10rem;
+	height: 10rem;
+	margin: auto;
+}
+
+h5 {
+	margin: 2rem;
+	font-weight: 600;
+	line-height: 1.5rem;
+	color: #223e5c;
+}
+ion-button{
+    --background: linear-gradient( 135deg, #52e79d 10%, #130CB7 100%);
+    margin-top: 20px;
+  }
+
+
+
+

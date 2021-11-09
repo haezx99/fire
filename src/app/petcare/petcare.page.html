@@ -1,0 +1,75 @@
+<ion-header class="ion-no-border">
+	<ion-toolbar color="dark" [appHideheader]="scrollArea">
+		<ion-buttons slot="start">
+			<ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-title>Pet Care</ion-title>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+  <ion-content  #scrollArea scrollEvents="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h5>Service avaible in the petcare category</h5>
+        </ion-col>
+      </ion-row>
+      
+      
+
+      
+
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/petcare1/'">
+                <img src="assets/PetCare.jpg">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>PETCARE ENTERPRISE</b>
+               <br>
+               It's established in 1990
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/petcare2/'">
+                <img src="assets/petcare2.png">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>PETS CORNER</b>
+               <br>
+               It's established in 1978
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+
+          <ion-list>
+            <ion-item>
+              <ion-avatar [routerLink]="'/petcare3/'">
+                <img src="assets/petcare3.png">
+              </ion-avatar>
+            
+              <ion-card-content>
+                <b>PET NANNY</b>
+               <br>
+               It's established in 1978
+               
+              </ion-card-content>
+            </ion-item>
+            
+          </ion-list>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
